@@ -3,7 +3,7 @@ import './Hero.css'
 import hero_image from '../Assets/hero-image.png'
 import {HiLocationMarker} from 'react-icons/hi'
 import CountUp from 'react-countup'
-{/*import {motion} from 'framer-motion'*/}
+import {motion} from 'framer-motion'
 
 const Hero = () => {
   return (
@@ -14,8 +14,12 @@ const Hero = () => {
       <div className="flexColStart hero-left">
         <div className="hero-title">
           <div className="orange-cicle"/>
-          <h1>
-            Discover<br/>Most Suitable <br/> Property</h1>
+          <motion.h1 initial={{y: "2rem", opacity: 0}} animate={{y: 0, opacity: 1}} transition={{
+            duration: 2,
+            type: "spring",
+          }}>
+            Discover<br/>Most Suitable <br/> Property
+          </motion.h1>
         </div>
 
         <div className="flexColStart hero-des">
@@ -56,9 +60,12 @@ const Hero = () => {
       </div>
         {/* LADO DIREITO */}
       <div className="flexCenter hero-right">
-        <div className="image-container">
+        <motion.div initial={{x: "7rem", opacity: 0}} 
+        animate={{x: 0, opacity: 1}}
+        transition={{duration: 2, type: "spring"}}
+        className="image-container">
           <img src={hero_image} alt="" />
-        </div>
+        </motion.div>
       </div>
     </div>
     </section>
