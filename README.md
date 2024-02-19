@@ -2,6 +2,7 @@
 
 HauSpace é uma plataforma inspirada no Airbnb, desenvolvida utilizando React e Node.js, que visa facilitar a compra e o aluguel de propriedades. 
 Com uma interface amigável e uma robusta backend, oferecemos uma experiência segura e agradável para usuários que procuram por estadias curtas ou a aquisição de um novo lar.
+<img src="https://albert-claudio.github.io/images/real-estate.png" alt="Haus"/>
 
 ## Recursos
 
